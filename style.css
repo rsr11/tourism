@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    /* position:relative; */
+    /* overflow: scroll; */
+}
+body{
+    background-color: rgb(225, 225,255,0.9);
+    /* width: 100vh; */
+}
+
+ /*------------------------------------------------------- this is for header page ----------------------------------------------- */
+
+
+
+
+ /*------------------------------------------this is for navbar---------------------------- */
+header{
+    /* width:100%; 700*/
+    height:100vh;
+    background-image: url(photos/bg3.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.top-nav{
+    /* position:fixed; */
+    /* width: 100%; */
+    /* background-color: rgb(255,255,255,0.8); */
+    /* background-color: antiquewhite; */
+    background-color: rgb(255,255,255,0.3);
+    /* background-image: url(white.jpg); */
+    z-index: 5;
+}
+nav{
+    display: flex;
+    justify-content: end;
+    /* position:; */
+}
+#logo{
+    position: absolute;
+    /* 20 */
+     margin-top: 2vh;
+     margin-left: 25vh;
+     color: rgb(7, 22, 22);
+}
+#menu{
+    display: none;
+    /* visibility: visible; */
+    /* visibility: hidden; */
+    /* height:-15px; */
+    /* width:-10px; */
+   
+}
+nav ul{
+    display: inline-block;
+    /* position:fixed; */
+
+}
+nav ul li{
+    display: inline-block;
+    /* 20 */
+    margin-top:2vh;
+    /* 10 */
+    padding:1.5vh;
+    transition: 0.5s;
+    position:sticky;
+}
+nav ul li:hover{
+    /* background-color: rgb(71, 74, 77); */
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgb(0,0,0,0.4);
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(2, 12, 12);
+    position: sticky;
+
+}
+#last-nav-text{
+    /* 268/ */
+    margin-right: 40vh;
+}
+
+/* -------------------------------------------styling for navbar end here-------------------------------------------- */
+
+
+
+/* ---------------------------------------------styling  section-one is below------------------------------------- */
+
+.section-one{
+    position: absolute;
+    /* 100 */
+    top: 10vh;
+    /* 50 */
+    right:10vh;
+    /* 0vh */
+    /* margin-right:150px; */
+    /* 80 */
+    margin-top:10vh;
+    /* 10 */
+
+}
+.section-one h1{
+    font-size:5em;
+    color: rgb(1, 10, 19);   
+    /* margin-right:240px; */
+    /* 3 */
+    letter-spacing:0.1vh;
+    /* 90 */
+    line-height:13vh;
+
+}
+.section-one p{
+    color: rgb(9, 10, 10);
+    font-weight: 900;
+    /* 30px */
+    margin-left:3vh;
+    font-size:1.5em;
+    /* 50 */
+    margin-top:2vh;
+    
+}
+.section-one button{
+    /* 50 */
+    margin-top:5vh;
+    /* 10 20 */
+    padding: 1.5vh 2.5vh;
+    background-color: black;
+    color: aliceblue;
+
+    border-radius: 20px;
+    /* 20 */
+    margin-left:10vh;
+}
+.section-one button:hover{
+    background-color: rgb(248, 241, 241);
+    color: black;
+    border: navajowhite;
+    /* box-shadow: 0 4px 30px rgb(0,0,0,0.4); */
+}
+
+
+
+/* -----------------------------------------header styling is ended here------------------------------------------ */
+
+
+/*------------------------------------------------------- section-two styling --------------------------------------------- */
+
+
+.section-two{
+    /* 600 */
+    height: 80vh;
+    /* width: 100%; */
+    /* 100 100 */
+    margin: 10vh 10vh;
+    text-align: center;
+    /* background-color:aquamarine; */
+     border-radius: 10px;
+
+}
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* 150 */
+    margin-top:16vh;
+    /* background-color: aliceblue; */
+}
+.services img{
+    /* 100 */
+    height: 16vh;
+    /* 100 */
+    width: 16vh;
+    /* 20 */
+    padding: 3vh;
+    box-shadow: 0 4px 30px rgb(0,0,0,0.4);
+    background-color: aqua;
+    border-radius: 10px;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    background-color: white;
+
+    /* height: 300px; */
+    /* width: 230px; */
+    /* background-color: aqua; */
+}
+.detail h3{
+    /* 30 */
+    margin-top:3vh;
+}
+.restaurants,.hotel,.flights{
+    /* 40 */
+    padding: 5vh;
+    /* 40 */
+    margin-left:5vh;
+    /* 250 */
+    height: 38vh;
+    /* 180 */
+    width: 24vh;
+    /* background-color: bisque; */
+    /* border: 1px solid rgb(0,0,0,1); */
+    box-shadow: 0 4px 30px rgb(0,0,0,0.9);
+    border-radius: 20px;
+}
+.restaurants img{
+    /* 10 */
+    margin-left:1vh;
+}
+
+.show-result{
+    color: rgba(74, 71, 71, 0.8);
+    /* 20 */
+    padding-top:1vh;
+    transition: 0.5s;
+}
+.show-result:hover{
+    transform: translateX(8px);
+}
+
+
+/*------------------------------------------------------- section-two styling ended--------------------------------------------- */
+
+
+/* ---------------------------------------------------section-three styling----------------------- */
+.section-three{ 
+    height: 1100px;
+    /* width: 100%; */
+    /* background-color: aqua; */
+    margin: 100px 100px 0px 100px;
+    border-radius: 10px;
+}
+.destination-title{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.destination-img-set-one,.destination-img-set-two{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.des-img-1,.des-img-2,.des-img-3{
+    height: 360px;
+    width: 280px;
+}
+.des-img-1{
+    background-image: url(photos/rome.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    /* justify-content: end; */
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.des-img-2{
+    background-image: url(photos/amritsar.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.des-img-3{
+    background-image: url(photos/london.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+
+
+}
+.destination-img-set-two{
+    margin-top: 50px;
+}
+
+.des-img-4,.des-img-5,.des-img-6{
+    height: 360px;
+    width: 280px;
+}
+.des-img-4{
+    background-image: url(photos/paris.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.des-img-5{
+    background-image: url(photos/tokyo.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.des-img-6{
+    background-image: url(photos/california.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    align-items: flex-end;
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+
+
+}
+
+.des-name{
+    /* margin-left: 50px; */
+    color: aliceblue;
+    font-size:1.8em;
+}
+.liftup{
+    transition: 0.5s;
+    margin: 20px;
+}
+.liftup:hover{
+   transform: translateY(-5px);
+}
+/* -----------------------------------------------------------section-three styling ended--------------------------------------------- */
+
+
+/* -------------------------------------------------------------section-four styling--------------------------------------------- */
+.section-four{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.testimony-1,.testimony-2,.testimony-3{
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255,255,255,0.2);
+    box-shadow: 0 4px 40px rgb(0,0,0,0.1);
+    /* justify-content: center; */
+    align-items: center;
+    margin:30px;
+}
+.top{
+    height: 50%;
+    /* background-color: rgb(255,255,255,0.2); */
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    border-radius: 0% 0% 0% 70px;
+}
+.img-circle{
+    height: 150px;
+    width: 150px;
+    background-image: url(photos/yaman.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-top: 30px;
+    box-shadow: 0 4px 40px rgb(0,0,0,0.4);
+}
+.img2-circle{
+    height: 150px;
+    width: 150px;
+    background-image: url(photos/she.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-top: 30px;
+    box-shadow: 0 4px 40px rgb(0,0,0,0.4);
+    /* stroke-width: 2px; */
+}
+.img3-circle{
+    height: 150px;
+    width: 150px;
+    background-image: url(photos/he.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-top: 30px;
+    box-shadow: 0 4px 40px rgb(0,0,0,0.4);
+}
+.review{
+    border-radius: 0% 70px 0px 0%;
+    /* background-color: rgb(255,255,255,0.2); */
+    height: 50%;
+    width: 100%;
+}
+.review h1{
+    text-align: center;
+}
+.review p{
+    text-align: center;
+}
+
+/* -----------------------------------------------------section-four styling ended------------------------------ */
+
+
+/* --------------------------------------------------------section-five styling-------------------------------------- */
+.section-five{
+    height: 400px;
+    margin: 200px 100px;
+    /* background-color: blue; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    justify-content: space-evenly;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+/* .contact-us{ */
+
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* width: 50%; */
+    /* background-color: aqua; */
+/* } */
+.part-1{
+    margin-left: 0px;
+    height: 400px;
+    width: 700px;
+    /* background-color: atiquewhite; */
+}
+.part-1 h1{
+    margin-top: 30px;
+    font-size:50px;
+    font-size: 3.4em;
+}
+.part-1 p{
+    margin-top:20px;
+}
+ .email-facility{ 
+     height: 350px;
+     width: 450px;
+     border-radius: 8px;
+     /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column; 
+    /* justify-content:flex-end;  */
+     /* margin-left: 800px; */
+    /* margin-top:0px; */
+    /* padding: 50px; */
+     background-color: rgb(255,255,255,0.3);
+    box-shadow: 0 4px 40px rgb(0,0,0,0.2);
+    /* background-color: aqua;  */
+     /* align-items: flex-end;  */
+}
+
+.email-facility input{
+    /* margin-top: 10px; */
+    margin: 30px 100px;
+    padding: 6px;
+    border-radius: 3px;
+    border: none;
+}
+.email-facility textarea{
+    resize: none;
+    margin:0px 100px;
+    border: none;
+    border-radius: 6px;
+}
+.email-facility button{
+    margin-top: 30px;
+    background-color: aqua;
+    border-radius: 6px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+} 
+.footer{
+    height:250px;
+    background-color:black;
+}
+
+/* -----------------------------------------reponsiveness of website----------------------------------------- */
+
+
+
+/* -----------------------------------------------footer styling is started from here-------------------------------  */
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.footer ul{
+   margin-top:30px;
+}
+.social-links{
+    height: 20vh;
+    width: 50vh;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.social-links h3{
+    margin-top: 30px;
+}
+.social-links img{
+    margin-top:10px;
+   width:35px;
+   height:35px;
+   margin-left:20px;
+   color: aliceblue;
+   display: flex;
+}
+.footer .links ul li{
+    color: aliceblue;
+    list-style: none;
+}
+.links{
+    height: 20vh;
+    width: 50vh;
+    
+}
+
+
+/* ----------------------------------------------footer styling ended here ------------------------------------------------------- */
+
+.copyright{
+    height:40px;
+    width: 100%;
+    background-color: rgb(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright h3{
+    color: aliceblue;
+}
+
+/* -----------------------------------------media quaries------------------------------------------  */
+
+@media (max-width:400px) {
+    nav ul li{
+        display: none;
+    }
+    
+    body{
+        width:100vh;
+        /* height:1000vh; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* display: flex; */
+    }
+    #logo{
+        margin-left:35px;
+        font-size:40px;
+    }
+    #menu{
+        /* visibility: visible; */
+        display: block;
+        /* position: absolute; */
+        /* right: 0%; */
+        width: 50px;
+        margin-left:600px;
+        padding-top: 25px;
+    }
+    .section-one{
+         /* display: flex; */
+        /* flex-direction: column; */
+        /* width: 500px; */
+        width: 100vh;
+        /* float: right; */
+        /* text-align: center;  */
+
+    }
+    header{
+        width: 100vh;
+        /* display: flex; */
+        height: 1000px;
+        /* filter: blur(1px); */
+    }
+    .section-one h1{
+         font-size:50px;
+         line-height: normal;
+        letter-spacing: normal;
+        width: 300px;
+        text-align:center;
+        background: rgb(255,255,255,0.2); 
+        box-shadow: 0 4px 40px rgb(0,0,0,0.1);
+        filter: blur(1px);
+        border-radius: 20px;
+        /* position:initial; */
+        margin-top: 0%;
+        margin-left: 90%;
+        /* top: 20px; */
+        /* right: 10px; */
+    }
+    .section-one p{
+        margin-left:600px;
+        width: 60vh;
+        /* color: aliceblue; */
+
+    }
+    .section-one button{
+        margin-left:650px;
+        width: 200px;
+        height: 50px;
+    }
+    .section-two{
+        height:1400px;
+    }
+    .last-two-services{
+        margin-top:70px;
+    }
+    .services{
+        margin:70px;
+        align-items: center;
+        justify-content: center;
+    }
+    #unhide{
+        font-size:50px;
+    }
+    .section-three{
+        height:2800px;
+    }
+    .destination-title{
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+
+    .section-five{
+        height: 600px;
+    }
+    .part-1{
+        /* justify-content: center; */
+        text-align: center;
+        /* align-items: center; */
+    }
+    .footer .links ul li{
+        color: aliceblue;
+        list-style: none;
+        margin-left:30px;
+    }
+}
+
+
